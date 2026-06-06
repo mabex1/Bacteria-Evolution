@@ -232,9 +232,9 @@ public partial class Bacteria : RigidBody2D
         if (body is Bacteria other)
         {
 
-            if (CurrentGene is HunterGene)
+            if (CurrentGene is HunterGene && !(other.CurrentGene is HunterGene))
                 _targetEnemy = other;
-            else if (CurrentGene is VampireGene)
+            else if (CurrentGene is VampireGene && !(other.CurrentGene is VampireGene))
                 _targetVictim = other;
             else if (CurrentGene is PeaceGene && other.CurrentGene is HunterGene)
                 RunAwayFrom(other);
@@ -283,11 +283,11 @@ public partial class Bacteria : RigidBody2D
 		}
 		if (body is Bacteria other)
 		{
-			if (CurrentGene is HunterGene)
+			if (CurrentGene is HunterGene && !(other.CurrentGene is HunterGene))
 			{
 				Attack(other);
 			}
-			else if(CurrentGene is VampireGene)
+			else if(CurrentGene is VampireGene && !(other.CurrentGene is VampireGene))
 			{
 				StealEnergy(other);
 			}
