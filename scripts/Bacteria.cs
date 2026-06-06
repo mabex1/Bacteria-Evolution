@@ -41,7 +41,11 @@ public partial class Bacteria : RigidBody2D
         LockRotation = true;
 
         _visionArea.AreaEntered += OnVisionAreaEntered;
-        _visionArea.BodyExited += OnVisionAreaExited;
+        _visionArea.AreaExited += OnVisionAreaExited;
+
+        _visionArea.BodyEntered += OnVisionBodyEntered;
+        _visionArea.BodyExited += OnVisionBodyExited;
+
         BodyEntered += OnBodyEntered;
 
         _energyTimer = new Timer();
@@ -250,17 +254,21 @@ public partial class Bacteria : RigidBody2D
 		{
 			_targetFood = null;
 		}
-		if (body == _targetEnemy)
-		{
-			_targetEnemy = null;
-		}
-		if (body == _targetVictim)
-		{
-			_targetVictim = null;
-		}
 	}
 
-	private void RunAwayFrom(Bacteria predator)
+    private void OnVisionBodyExited(Node2D body)
+    {
+        if (body == _targetEnemy)
+        {
+            _targetEnemy = null;
+        }
+        if (body == _targetVictim)
+        {
+            _targetVictim = null;
+        }
+    }
+
+    private void RunAwayFrom(Bacteria predator)
 	{
 		Vector2 direction = (Position - predator.Position).Normalized();
 		LinearVelocity = direction * (_speed * CurrentGene.SpeedBonus * 1.2f);
