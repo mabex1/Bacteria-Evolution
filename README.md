@@ -53,6 +53,6 @@ Open the project in Godot and press F5 to run.
 License
 
 MIT License
-Author
+mabex1
 
 Created by https://github.com/mabex1
