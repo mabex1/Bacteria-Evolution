@@ -94,7 +94,8 @@ Tips for balanced genes:
 1. Don't make all stats high — add drawbacks (e.g., high Speed but also high MetabolismCost)
 2. Test your gene — run the simulation and watch if it survives or dominates too much
 3. Colors with alpha — use new Color(0.5f, 0.2f, 0.8f) for custom RGB
-It's just a tip, you can make a gene whatever you want!
+
+**It's just a tips, you can make a gene whatever you want!**
 
 Example: Laser Gene (instantly kills on hit)
 ```csharp
