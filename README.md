@@ -80,15 +80,16 @@ if (roll < 95) return new MyGene();  // 5% chance
 ```
 Build and run — your new gene will appear in the simulation!
 
-Gene parameters reference
-Parameter	What it does	Example
-SpeedBonus	Movement speed multiplier	1.5f = 50% faster
-MetabolismCost	Energy consumption rate	0.5f = half energy drain
-AttackDamage	Damage dealt to other bacteria	20f = one-hit kill on weak
-DefenseBonus	Damage reduction (0-1)	0.3f = 30% less damage
-VampireSteal	Percentage of energy stolen	0.4f = steal 40%
-ReproductionCost	Energy needed to divide	80f = easier to reproduce
-MutationChanceBonus	Extra mutation chance	0.05f = +5% mutation
+### Gene parameters reference
+
+- **SpeedBonus** — Movement speed multiplier (example: `1.5f` = 50% faster)
+- **MetabolismCost** — Energy consumption rate (example: `0.5f` = half energy drain)
+- **AttackDamage** — Damage dealt to other bacteria (example: `20f` = one-hit kill on weak)
+- **DefenseBonus** — Damage reduction, 0 to 1 (example: `0.3f` = 30% less damage)
+- **VampireSteal** — Percentage of energy stolen (example: `0.4f` = steal 40%)
+- **ReproductionCost** — Energy needed to divide (example: `80f` = easier to reproduce)
+- **MutationChanceBonus** — Extra mutation chance (example: `0.05f` = +5% mutation)
+
 Tips for balanced genes:
 1. Don't make all stats high — add drawbacks (e.g., high Speed but also high MetabolismCost)
 2. Test your gene — run the simulation and watch if it survives or dominates too much
