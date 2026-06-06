@@ -25,7 +25,7 @@ size = Vector2(1952.75, 10)
 script = ExtResource("1_o5qli")
 BacteriaScene = ExtResource("2_sugp2")
 FoodScene = ExtResource("3_jyhfs")
-FoodSpawnDelay = 0.1
+FoodSpawnDelay = 0.05
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1826133620]
 layer = -1
