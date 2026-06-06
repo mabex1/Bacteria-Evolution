@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://bftsoye3etitq"]
+
+[ext_resource type="Script" uid="uid://bred6mac3jlkk" path="res://scripts/Bacteria.cs" id="1_t3sbu"]
+[ext_resource type="Texture2D" uid="uid://cwes2sqvnvrld" path="res://sprites/bacteria.png" id="2_h2ekr"]
+[ext_resource type="AudioStream" uid="uid://clkfyaf1y81tj" path="res://sfx/divide.mp3" id="2_lcq1f"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v70ga"]
+radius = 11.045361
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_t3sbu"]
+radius = 175.01143
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h2ekr"]
+radius = 22.022715
+
+[node name="Bacteria" type="RigidBody2D" unique_id=504231661]
+collision_mask = 3
+script = ExtResource("1_t3sbu")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=873224500]
+rotation = -1.5707964
+texture = ExtResource("2_h2ekr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=649031603]
+shape = SubResource("CircleShape2D_v70ga")
+
+[node name="VisionArea" type="Area2D" parent="." unique_id=536875836]
+collision_layer = 4
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VisionArea" unique_id=1727597046]
+shape = SubResource("CircleShape2D_t3sbu")
+
+[node name="DivideSound" type="AudioStreamPlayer2D" parent="." unique_id=1616692737]
+stream = ExtResource("2_lcq1f")
+
+[node name="CollectArea" type="Area2D" parent="." unique_id=545146615]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollectArea" unique_id=2011591238]
+shape = SubResource("CircleShape2D_h2ekr")
+
+[connection signal="body_entered" from="." to="." method="OnBodyEntered"]

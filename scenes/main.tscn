@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://b4ekp5wnu2iye"]
+
+[ext_resource type="Script" uid="uid://cy1tluod1j4bi" path="res://scripts/Main.cs" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://bftsoye3etitq" path="res://scenes/bacteria.tscn" id="2_sugp2"]
+[ext_resource type="PackedScene" uid="uid://c1w836538eed1" path="res://scenes/food.tscn" id="3_jyhfs"]
+[ext_resource type="Shader" uid="uid://cseq7s2qnsruc" path="res://shaders/background.gdshader" id="4_jyhfs"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tbgi4"]
+shader = ExtResource("4_jyhfs")
+shader_parameter/speed = 0.5
+shader_parameter/scale = 5.0
+shader_parameter/color1 = Color(0.05, 0.1, 0.25, 1)
+shader_parameter/color2 = Color(0.15, 0.05, 0.3, 1)
+shader_parameter/color3 = Color(0.02, 0.05, 0.15, 1)
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_jyhfs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jyhfs"]
+size = Vector2(16, 1127)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sugp2"]
+size = Vector2(1952.75, 10)
+
+[node name="Node2D" type="Node2D" unique_id=274843139]
+script = ExtResource("1_o5qli")
+BacteriaScene = ExtResource("2_sugp2")
+FoodScene = ExtResource("3_jyhfs")
+FoodSpawnDelay = 0.1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1826133620]
+layer = -1
+
+[node name="shader" type="TextureRect" parent="CanvasLayer" unique_id=1807372854]
+material = SubResource("ShaderMaterial_tbgi4")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("NoiseTexture2D_jyhfs")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1345422948]
+position = Vector2(960, 540)
+
+[node name="Walls" type="StaticBody2D" parent="." unique_id=1632138371]
+collision_mask = 0
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Walls" unique_id=589227670]
+position = Vector2(1923, 553)
+shape = SubResource("RectangleShape2D_jyhfs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls" unique_id=2015461363]
+position = Vector2(963, 0)
+shape = SubResource("RectangleShape2D_sugp2")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Walls" unique_id=1879740349]
+position = Vector2(957, 1085)
+shape = SubResource("RectangleShape2D_sugp2")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Walls" unique_id=464741429]
+position = Vector2(-6, 536)
+shape = SubResource("RectangleShape2D_jyhfs")

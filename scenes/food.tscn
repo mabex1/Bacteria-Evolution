@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://c1w836538eed1"]
+
+[ext_resource type="Script" uid="uid://b62nucltfmsiy" path="res://scripts/Food.cs" id="1_xven1"]
+[ext_resource type="Texture2D" uid="uid://bvc45up5gm6qd" path="res://sprites/food.png" id="2_af40f"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2glmo"]
+radius = 8.0
+
+[node name="Food" type="Area2D" unique_id=2074268826]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_xven1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1058299444]
+shape = SubResource("CircleShape2D_2glmo")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=22884172]
+texture = ExtResource("2_af40f")
+
+[connection signal="body_entered" from="." to="." method="OnBodyEntered"]

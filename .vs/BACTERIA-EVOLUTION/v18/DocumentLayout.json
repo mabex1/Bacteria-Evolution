@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\godotprojects\\bacteria-evolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|d:\\godotprojects\\bacteria-evolution\\scripts\\genes\\armorgene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|solutionrelative:scripts\\genes\\armorgene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|d:\\godotprojects\\bacteria-evolution\\scripts\\genes\\defaultgene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|solutionrelative:scripts\\genes\\defaultgene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|d:\\godotprojects\\bacteria-evolution\\scripts\\genes\\gene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|solutionrelative:scripts\\genes\\gene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|d:\\godotprojects\\bacteria-evolution\\scripts\\genes\\huntergene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|solutionrelative:scripts\\genes\\huntergene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\PeaceGene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\Genes\\PeaceGene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|d:\\godotprojects\\bacteria-evolution\\scripts\\genes\\resistancegene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|solutionrelative:scripts\\genes\\resistancegene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|d:\\godotprojects\\bacteria-evolution\\scripts\\genes\\sciencetistgene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|solutionrelative:scripts\\genes\\sciencetistgene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|d:\\godotprojects\\bacteria-evolution\\scripts\\genes\\speedgene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|solutionrelative:scripts\\genes\\speedgene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|d:\\godotprojects\\bacteria-evolution\\scripts\\genefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|solutionrelative:scripts\\genefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|d:\\godotprojects\\bacteria-evolution\\scripts\\bacteria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|solutionrelative:scripts\\bacteria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|d:\\godotprojects\\bacteria-evolution\\scripts\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|solutionrelative:scripts\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|d:\\godotprojects\\bacteria-evolution\\scripts\\genes\\vampiregene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|solutionrelative:scripts\\genes\\vampiregene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|d:\\godotprojects\\bacteria-evolution\\scripts\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD2C4863-8946-48D6-AA76-6383DA5B4845}|bacteria-evolution.csproj|solutionrelative:scripts\\food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DefaultGene.cs",
+              "DocumentMoniker": "D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\DefaultGene.cs",
+              "RelativeDocumentMoniker": "scripts\\Genes\\DefaultGene.cs",
+              "ToolTip": "D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\DefaultGene.cs",
+              "RelativeToolTip": "scripts\\Genes\\DefaultGene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T12:09:08.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Gene.cs",
+              "DocumentMoniker": "D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\Gene.cs",
+              "RelativeDocumentMoniker": "scripts\\Genes\\Gene.cs",
+              "ToolTip": "D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\Gene.cs",
+              "RelativeToolTip": "scripts\\Genes\\Gene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T12:08:55.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HunterGene.cs",
+              "DocumentMoniker": "D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\HunterGene.cs",
+              "RelativeDocumentMoniker": "scripts\\Genes\\HunterGene.cs",
+              "ToolTip": "D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\HunterGene.cs",
+              "RelativeToolTip": "scripts\\Genes\\HunterGene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T12:08:52.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ResistanceGene.cs",
+              "DocumentMoniker": "D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\ResistanceGene.cs",
+              "RelativeDocumentMoniker": "scripts\\Genes\\ResistanceGene.cs",
+              "ToolTip": "D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\ResistanceGene.cs",
+              "RelativeToolTip": "scripts\\Genes\\ResistanceGene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T12:08:45.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SciencetistGene.cs",
+              "DocumentMoniker": "D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\SciencetistGene.cs",
+              "RelativeDocumentMoniker": "scripts\\Genes\\SciencetistGene.cs",
+              "ToolTip": "D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\SciencetistGene.cs",
+              "RelativeToolTip": "scripts\\Genes\\SciencetistGene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T12:08:41.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SpeedGene.cs",
+              "DocumentMoniker": "D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\SpeedGene.cs",
+              "RelativeDocumentMoniker": "scripts\\Genes\\SpeedGene.cs",
+              "ToolTip": "D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\SpeedGene.cs",
+              "RelativeToolTip": "scripts\\Genes\\SpeedGene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T12:08:36.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Food.cs",
+              "DocumentMoniker": "D:\\godotprojects\\bacteria-evolution\\scripts\\Food.cs",
+              "RelativeDocumentMoniker": "scripts\\Food.cs",
+              "ToolTip": "D:\\godotprojects\\bacteria-evolution\\scripts\\Food.cs",
+              "RelativeToolTip": "scripts\\Food.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T12:07:08.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ArmorGene.cs",
+              "DocumentMoniker": "D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\ArmorGene.cs",
+              "RelativeDocumentMoniker": "scripts\\Genes\\ArmorGene.cs",
+              "ToolTip": "D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\ArmorGene.cs",
+              "RelativeToolTip": "scripts\\Genes\\ArmorGene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T12:05:49.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\godotprojects\\bacteria-evolution\\scripts\\Main.cs",
+              "RelativeDocumentMoniker": "scripts\\Main.cs",
+              "ToolTip": "D:\\godotprojects\\bacteria-evolution\\scripts\\Main.cs",
+              "RelativeToolTip": "scripts\\Main.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T11:42:28.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "VampireGene.cs",
+              "DocumentMoniker": "D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\VampireGene.cs",
+              "RelativeDocumentMoniker": "scripts\\Genes\\VampireGene.cs",
+              "ToolTip": "D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\VampireGene.cs",
+              "RelativeToolTip": "scripts\\Genes\\VampireGene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T10:47:25.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GeneFactory.cs",
+              "DocumentMoniker": "D:\\godotprojects\\bacteria-evolution\\scripts\\GeneFactory.cs",
+              "RelativeDocumentMoniker": "scripts\\GeneFactory.cs",
+              "ToolTip": "D:\\godotprojects\\bacteria-evolution\\scripts\\GeneFactory.cs",
+              "RelativeToolTip": "scripts\\GeneFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T10:43:00.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PeaceGene.cs",
+              "DocumentMoniker": "D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\PeaceGene.cs",
+              "RelativeDocumentMoniker": "scripts\\Genes\\PeaceGene.cs",
+              "ToolTip": "D:\\godotprojects\\bacteria-evolution\\scripts\\Genes\\PeaceGene.cs",
+              "RelativeToolTip": "scripts\\Genes\\PeaceGene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-06T07:10:50.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Bacteria.cs",
+              "DocumentMoniker": "D:\\godotprojects\\bacteria-evolution\\scripts\\Bacteria.cs",
+              "RelativeDocumentMoniker": "scripts\\Bacteria.cs",
+              "ToolTip": "D:\\godotprojects\\bacteria-evolution\\scripts\\Bacteria.cs",
+              "RelativeToolTip": "scripts\\Bacteria.cs",
+              "ViewState": "AgIAAPcAAAAAAAAAAAAUwPIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T19:07:39.109Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
