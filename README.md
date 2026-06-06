@@ -20,9 +20,7 @@ A 2D evolution simulator where bacteria with different genes compete for surviva
 ## Controls
 
 - **Add food** — Left mouse click
-- **Pause / Resume** — UI button
-- **Speed x2 / x4** — UI buttons
-- **Restart simulation** — UI button
+- **Restart simulation** — R button
 
 ## Genes
 
@@ -39,7 +37,6 @@ A 2D evolution simulator where bacteria with different genes compete for surviva
 
 1. Watch the simulation run
 2. Add food manually by clicking anywhere
-3. Speed up time to see evolution in action
 4. Restart to start a new simulation
 
 ## Requirements
@@ -49,13 +46,13 @@ A 2D evolution simulator where bacteria with different genes compete for surviva
 
 ## Build from Source
 
-git clone https://github.com/yourusername/bacteria-evolution.git
+git clone https://github.com/mabex1/bacteria-evolution.git
 cd bacteria-evolution
 
 Open the project in Godot and press F5 to run.
 License
 
 MIT License
-Author
+mabex1
 
 Created by https://github.com/mabex1
