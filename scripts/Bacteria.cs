@@ -311,7 +311,6 @@ public partial class Bacteria : RigidBody2D
 		{
 			target.QueueFree();
 		}
-		if (Energy > 200) Energy = 200;
 	}
 
 	public void TakeDamage(float damage)

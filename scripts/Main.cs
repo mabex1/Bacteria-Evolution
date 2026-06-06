@@ -8,7 +8,7 @@ public partial class Main : Node2D
 	[Export] public PackedScene FoodScene;
 
 	[Export] public float FoodSpawnDelay = 2f;
-	[Export] public Vector2 SpawnBounds = new Vector2(1920, 1080);
+	[Export] public Vector2 SpawnBounds = new Vector2(1910, 1070);
 
 	private Timer _foodTimer;
 	private Timer _statsTimer;
@@ -91,6 +91,11 @@ public partial class Main : Node2D
 		if (@event is InputEventMouseButton mouseEvent && mouseEvent.ButtonIndex == MouseButton.Left && mouseEvent.Pressed)
 		{
 			SpawnFoodAtPosition(mouseEvent.Position);
+		}
+
+		if(@event.IsActionPressed("ui_cancel") || (@event is InputEventKey keyEvent && keyEvent.Pressed && keyEvent.Keycode == Key.Escape))
+		{
+			GetTree().Quit();
 		}
     }
 
