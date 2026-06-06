@@ -65,7 +65,6 @@ public partial class Main : Node2D
             float randomY = (float)GD.RandRange(0, SpawnBounds.Y);
             food.Position = new Vector2(randomX, randomY);
             AddChild(food);
-			GD.Print($"food spawned. cords: {randomX}, {randomY}");
         }
 		catch(Exception ex)
 		{
