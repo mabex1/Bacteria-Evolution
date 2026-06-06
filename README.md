@@ -21,6 +21,7 @@ A 2D evolution simulator where bacteria with different genes compete for surviva
 
 - **Add food** — Left mouse click
 - **Restart simulation** — R button
+- **Quit** - Esc button
 
 ## Genes
 
