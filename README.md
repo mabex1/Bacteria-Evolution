@@ -20,9 +20,7 @@ A 2D evolution simulator where bacteria with different genes compete for surviva
 ## Controls
 
 - **Add food** — Left mouse click
-- **Pause / Resume** — UI button
-- **Speed x2 / x4** — UI buttons
-- **Restart simulation** — UI button
+- **Restart simulation** — R button
 
 ## Genes
 
