@@ -1,3 +1,14 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+.vs/
+bin/
+obj/
+*.tmp
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.csproj
+*.sln
+export_presets.cfg
