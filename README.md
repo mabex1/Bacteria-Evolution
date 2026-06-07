@@ -125,7 +125,7 @@ cd bacteria-evolution
 
 Open the project in Godot and press F5 to run.
 
-License
+## License
 
 MIT License
 mabex1
