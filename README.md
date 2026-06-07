@@ -124,6 +124,7 @@ git clone https://github.com/mabex1/bacteria-evolution.git
 cd bacteria-evolution
 
 Open the project in Godot and press F5 to run.
+
 License
 
 MIT License
