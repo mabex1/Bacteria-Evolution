@@ -10,5 +10,6 @@ public partial class PeaceGene : Gene
         color = Colors.WhiteSmoke;
     }
 
-    public override float ReproductionCost => 150f;
+    public override float ReproductionCost => 75f;
+    public override float DefenseBonus => -0.2f;
 }

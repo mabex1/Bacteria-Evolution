@@ -10,5 +10,5 @@ public partial class SciencetistGene : Gene
         color = Colors.LightBlue;
     }
 
-    public override float MutationChanceBonus => 15f;
+    public override float MutationChanceBonus => 0.20f;
 }

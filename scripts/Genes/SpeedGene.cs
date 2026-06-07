@@ -11,6 +11,7 @@ public partial class SpeedGene : Gene
         color = Colors.Blue;
     }
 
-    public override float SpeedBonus => 1.2f;
-    public override float MetabolismCost => 1.5f;
+    public override float SpeedBonus => 1.4f;
+    public override float MetabolismCost => 1.2f;
+    public override float ReproductionCost => 110f;
 }

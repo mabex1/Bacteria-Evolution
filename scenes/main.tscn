@@ -25,7 +25,8 @@ size = Vector2(1952.75, 44)
 script = ExtResource("1_o5qli")
 BacteriaScene = ExtResource("2_sugp2")
 FoodScene = ExtResource("3_jyhfs")
-FoodSpawnDelay = 0.05
+FoodSpawnDelay = 0.03
+SpawnBounds = Vector2(1900, 1070)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1826133620]
 layer = -1
@@ -50,7 +51,7 @@ position = Vector2(1923, 553)
 shape = SubResource("RectangleShape2D_jyhfs")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Walls" unique_id=2015461363]
-position = Vector2(963, 0)
+position = Vector2(960, -20)
 shape = SubResource("RectangleShape2D_sugp2")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Walls" unique_id=1879740349]

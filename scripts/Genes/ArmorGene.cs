@@ -10,6 +10,8 @@ public partial class ArmorGene : Gene
 		color = Colors.Orange;
 	}
 
-    public override float MetabolismCost => 0.7f;
-    public override float DefenseBonus => 30f;
+    public override float MetabolismCost => 0.9f;
+    public override float DefenseBonus => 0.4f;
+    public override float ReproductionCost => 120f;
+    public override float SpeedBonus => 0.7f;
 }

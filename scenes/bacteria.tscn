@@ -33,6 +33,7 @@ shape = SubResource("CircleShape2D_t3sbu")
 
 [node name="DivideSound" type="AudioStreamPlayer2D" parent="." unique_id=1616692737]
 stream = ExtResource("2_lcq1f")
+volume_db = -60.0
 
 [node name="CollectArea" type="Area2D" parent="." unique_id=545146615]
 collision_layer = 8

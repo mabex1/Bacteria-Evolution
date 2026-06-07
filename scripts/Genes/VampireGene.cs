@@ -10,8 +10,8 @@ public partial class VampireGene : Gene
 		color = Colors.Purple;
 	}
 
-    public override float VampireSteal => 0.40f;
+    public override float VampireSteal => 0.50f;
     public override float SpeedBonus => 1.5f;
-    public override float MetabolismCost => 0.8f;
-	public override float ReproductionCost => 90f;
+    public override float MetabolismCost => 0.5f;
+	public override float ReproductionCost => 110f;
 }

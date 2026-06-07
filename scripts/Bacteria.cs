@@ -40,11 +40,11 @@ public partial class Bacteria : RigidBody2D
 		LinearDamp = 0.8f;
         LockRotation = true;
 
-        _visionArea.AreaEntered += OnVisionAreaEntered;
-        _visionArea.AreaExited += OnVisionAreaExited;
+        //_visionArea.AreaEntered += OnVisionAreaEntered;
+        //_visionArea.AreaExited += OnVisionAreaExited;
 
-        _visionArea.BodyEntered += OnVisionBodyEntered;
-        _visionArea.BodyExited += OnVisionBodyExited;
+        //_visionArea.BodyEntered += OnVisionBodyEntered;
+        //_visionArea.BodyExited += OnVisionBodyExited;
 
         BodyEntered += OnBodyEntered;
 
@@ -90,7 +90,9 @@ public partial class Bacteria : RigidBody2D
 	{
 		if (CurrentGene is VampireGene)
 		{
-			if(_targetVictim != null && IsInstanceValid(_targetVictim))
+            _targetVictim = GetClosestBody<Bacteria>(b => !(b.CurrentGene is VampireGene));
+
+            if (_targetVictim != null && IsInstanceValid(_targetVictim))
 			{
 				MoveTo(_targetVictim.Position);
 			}
@@ -101,7 +103,9 @@ public partial class Bacteria : RigidBody2D
 		}
 		else if (CurrentGene is HunterGene)
 		{
-			if(_targetFood != null && IsInstanceValid(_targetFood))
+            _targetFood = GetClosestArea<Food>(f => true);
+            _targetEnemy = GetClosestBody<Bacteria>(b => !(b.CurrentGene is HunterGene));
+            if (_targetFood != null && IsInstanceValid(_targetFood))
 			{
 				MoveTo(_targetFood.Position);
 			}
@@ -116,6 +120,17 @@ public partial class Bacteria : RigidBody2D
 		}
 		else
 		{
+			if(CurrentGene is PeaceGene)
+			{
+				Bacteria closestPredator = GetClosestBody<Bacteria>(b => b.CurrentGene is HunterGene);
+				if (closestPredator != null && IsInstanceValid(closestPredator))
+				{
+					RunAwayFrom(closestPredator);
+					return;
+				}
+			}
+
+            _targetFood = GetClosestArea<Food>(f => true);
             if (_targetFood != null && IsInstanceValid(_targetFood))
             {
                 MoveTo(_targetFood.Position);
@@ -233,10 +248,16 @@ public partial class Bacteria : RigidBody2D
         {
 
             if (CurrentGene is HunterGene && !(other.CurrentGene is HunterGene))
-                _targetEnemy = other;
+				if (_targetEnemy == null)
+				{
+                    _targetEnemy = other;
+                }
             else if (CurrentGene is VampireGene && !(other.CurrentGene is VampireGene))
-                _targetVictim = other;
-            else if (CurrentGene is PeaceGene && other.CurrentGene is HunterGene)
+                    if (_targetVictim == null)
+					{
+                        _targetVictim = other;
+                    }
+            else if (CurrentGene is PeaceGene && other.CurrentGene is HunterGene || CurrentGene is PeaceGene && other.CurrentGene is VampireGene)
                 RunAwayFrom(other);
         }
     }
@@ -244,13 +265,16 @@ public partial class Bacteria : RigidBody2D
     {
         if (area is Food food && !(CurrentGene is VampireGene))
         {
-            _targetFood = food;
+			if (_targetFood == null)
+			{
+                _targetFood = food;
+            }
         }
     }
 
-    private void OnVisionAreaExited(Node2D body)
+    private void OnVisionAreaExited(Area2D area)
 	{
-		if (body == _targetFood)
+		if (area == _targetFood)
 		{
 			_targetFood = null;
 		}
@@ -324,4 +348,44 @@ public partial class Bacteria : RigidBody2D
 			QueueFree();
 		}
 	}
+
+	private T GetClosestArea<T>(Func<T, bool> condition) where T : Area2D
+	{
+		T closest = null;
+		float minDistance = float.MaxValue;
+
+		foreach (var area in _visionArea.GetOverlappingAreas())
+		{
+			if (area is T target &&  condition(target))
+			{
+				float distance = Position.DistanceTo(target.Position);
+				if (distance < minDistance)
+				{
+					minDistance = distance;
+					closest = target;
+				}
+			}
+		}
+		return closest;
+	}
+
+    private T GetClosestBody<T>(Func<T, bool> condition) where T : Node2D
+    {
+        T closest = null;
+        float minDistance = float.MaxValue;
+
+        foreach (var body in _visionArea.GetOverlappingBodies())
+        {
+            if (body is T target && condition(target))
+            {
+                float distance = Position.DistanceTo(target.Position);
+                if (distance < minDistance)
+                {
+                    minDistance = distance;
+                    closest = target;
+                }
+            }
+        }
+        return closest;
+    }
 }

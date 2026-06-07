@@ -10,5 +10,8 @@ public partial class HunterGene : Gene
         color = Colors.Red;
     }
 
-    public override float AttackDamage => 100f;
+    public override float AttackDamage => 50f;
+    public override float SpeedBonus => 1.3f;
+    public override float MetabolismCost => 1.2f;
+    public override float ReproductionCost => 130;
 }

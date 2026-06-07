@@ -9,7 +9,7 @@ public partial class Gene : Node
 	public string Name { get; protected set; }
 
 	public virtual float SpeedBonus => 1.0f;
-    public virtual float MetabolismCost => 0.8f;
+    public virtual float MetabolismCost => 1f;
     public virtual float AttackDamage => 0f;
     public virtual float DefenseBonus => 0f;
     public virtual float VampireSteal => 0f;

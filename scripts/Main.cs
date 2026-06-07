@@ -18,6 +18,7 @@ public partial class Main : Node2D
 
     public override void _Ready()
 	{
+		Engine.TimeScale = 10f;
 		if (BacteriaScene == null)
 		{
 			GD.PrintErr("BacteriaScene not set.");
